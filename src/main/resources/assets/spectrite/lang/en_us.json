@@ -1,0 +1,12 @@
+{
+  "item.spectrite.spectrite_gem": "Spectrite Gem",
+  "item.spectrite.spectrite_rod": "Spectrite Rod",
+  "item.spectrite.diamond_rod": "Diamond Rod",
+  "item.spectrite.spectrite_brick": "Spectrite Brick",
+  "item.spectrite.spectrite_bone": "Spectrite Bone",
+  "item.spectrite.spectrite_dust": "Spectrite Dust",
+  "item.spectrite.spectrite_blaze_rod": "Spectrite Blaze Rod",
+  "item.spectrite.spectrite_blaze_powder": "Spectrite Blaze Powder",
+
+  "itemGroup.spectritetab": "Spectrite"
+}
