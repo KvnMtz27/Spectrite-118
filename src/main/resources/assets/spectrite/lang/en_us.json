@@ -8,5 +8,8 @@
   "item.spectrite.spectrite_blaze_rod": "Spectrite Blaze Rod",
   "item.spectrite.spectrite_blaze_powder": "Spectrite Blaze Powder",
 
+  "block.spectrite.spectrite_block": "Block of Spectrite",
+  "block.spectrite.spectrite_chest": "Spectrite Chest",
+
   "itemGroup.spectritetab": "Spectrite"
 }
