@@ -11,5 +11,8 @@
   "block.spectrite.spectrite_block": "Block of Spectrite",
   "block.spectrite.spectrite_chest": "Spectrite Chest",
 
-  "itemGroup.spectritetab": "Spectrite"
+  "itemGroup.spectritetab": "Spectrite",
+
+  "container.spectrite.chest": "Spectrite Chest",
+  "container.spectrite.chestDouble": "Spectrite Large Chest"
 }
