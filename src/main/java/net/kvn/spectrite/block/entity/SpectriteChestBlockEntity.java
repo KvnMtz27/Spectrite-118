@@ -58,7 +58,7 @@ public class SpectriteChestBlockEntity extends RandomizableContainerBlockEntity 
     }
 
     public SpectriteChestBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        this(BlockEntityType.CHEST, pPos, pBlockState);
+        this(ModBlockEntities.SPECTRITE_CHEST.get(), pPos, pBlockState);
     }
 
     /**

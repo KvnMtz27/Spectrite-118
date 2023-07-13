@@ -1,6 +1,7 @@
 package net.kvn.spectrite.block.custom;
 
 import it.unimi.dsi.fastutil.floats.Float2FloatFunction;
+import net.kvn.spectrite.block.entity.ModBlockEntities;
 import net.kvn.spectrite.block.entity.SpectriteChestBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -103,8 +104,8 @@ public class SpectriteChestBlock extends AbstractSpectriteChestBlock<SpectriteCh
         }
     };
 
-    public SpectriteChestBlock(BlockBehaviour.Properties pProperties, Supplier<BlockEntityType<? extends SpectriteChestBlockEntity>> pBlockEntityType) {
-        super(pProperties, pBlockEntityType);
+    public SpectriteChestBlock(BlockBehaviour.Properties pProperties) {
+        super(pProperties, () -> ModBlockEntities.SPECTRITE_CHEST.get());
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(TYPE, ChestType.SINGLE).setValue(WATERLOGGED, Boolean.valueOf(false)));
     }
 

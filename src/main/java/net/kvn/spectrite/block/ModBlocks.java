@@ -32,7 +32,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPECTRITE_CHEST = registerBlock("spectrite_chest",
             () -> new SpectriteChestBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(50f, 6000f).sound(SoundType.METAL)
-                    .lightLevel((state) -> {return 11;}), () -> {return ModBlockEntities.SPECTRITE_CHEST.get();}));
+                    .lightLevel((state) -> {return 11;})));
 
 
 
