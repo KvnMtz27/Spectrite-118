@@ -4,9 +4,11 @@ import com.mojang.logging.LogUtils;
 import net.kvn.spectrite.block.ModBlocks;
 import net.kvn.spectrite.block.entity.ModBlockEntities;
 import net.kvn.spectrite.item.ModItems;
+import net.kvn.spectrite.renderer.blockentity.SpectriteChestRenderer;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,13 +25,13 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+import java.util.Locale;
 import java.util.stream.Collectors;
 
-// The value here should match an entry in the META-INF/mods.toml file
+
 @Mod(Spectrite.MOD_ID)
-public class Spectrite
-{
-    // Directly reference a slf4j logger
+public class Spectrite {
+
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final String MOD_ID = "spectrite";
 
@@ -48,12 +50,9 @@ public class Spectrite
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPECTRITE_CHEST.get(), RenderType.cutout());
+        BlockEntityRenderers.register(ModBlockEntities.SPECTRITE_CHEST.get(), SpectriteChestRenderer::new);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 }
